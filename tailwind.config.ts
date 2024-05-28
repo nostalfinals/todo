@@ -7,6 +7,11 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {},
-  plugins: [],
+  plugins: [
+    require("@catppuccin/tailwindcss")({
+      prefix: "ctp",
+      defaultFlavour: "mocha",
+    })
+  ],
 };
 export default config;
